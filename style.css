@@ -1,0 +1,161 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+button:disabled {
+    filter: brightness(70%);
+}
+
+body {
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    background: #f5f5f5;
+    color: #4d4d4d;
+    min-width: 230px;
+    max-width: 550px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+.todoapp {
+    background: #fff;
+    margin: 130px 0 40px 0;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.todoapp input::placeholder {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.todo-form {
+    text-align: center;
+    padding: 1rem;
+}
+
+.new-todo {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.4em;
+    border: solid 1px #cfcfcf;
+    border-radius: 0.3rem;
+    color: inherit;
+    box-sizing: border-box;
+    padding: 1rem 1rem 1rem 3rem;
+    margin-bottom: 1rem;
+    background: rgba(0, 0, 0, 0.03);
+    box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.03);
+}
+
+.todo-submit-btn {
+    display: inline-block;
+    width: 120px;
+    padding: 0.5rem 1.5rem;
+    background-color: #606060;
+    border-radius: 1.5rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.todo-submit-btn:hover {
+    cursor: pointer;
+}
+
+.todo-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.todo-list li {
+    position: relative;
+    font-size: 24px;
+    border-bottom: 1px solid #ededed;
+    padding: 16px;
+}
+
+.todo-list li:last-child {
+    border-bottom: none;
+}
+
+.todo-list li form {
+  display: flex;
+  align-items: center;
+}
+
+.todo-list li input[type="checkbox"] {
+    width: 40px;
+    height: auto;
+    margin: auto 0;
+    border: none;
+}
+
+.todo-list li input[type="text"] {
+    font-size: 24px;
+    line-height: 1.4em;
+    border: solid 1px #cfcfcf;
+    border-radius: 0.3rem;
+    color: inherit;
+    box-sizing: border-box;
+    padding: 0.2rem 0.6rem;
+    margin-right: 0.3rem;
+}
+
+.todo-list li button {
+    height: 40px;
+    color: #fff;
+    background-color: #cc9a9a;
+    padding: 0.2rem 0.4rem;
+    font-size: 1rem;
+}
+
+.todo-list li button:hover {
+    cursor: pointer;
+}
+
+.todo-list li .delete {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    bottom: 0;
+    width: 60px;
+}
+
+.todo-list li .edit {
+    position: absolute;
+    top: 6px;
+    right: 80px;
+    bottom: 0;
+    width: 60px;
+}
+
+.todo-list li .save {
+  width: 60px;
+}
+
+.footer {
+    color: #777;
+    padding: 10px 15px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.footer p {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
